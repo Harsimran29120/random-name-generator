@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://hscompany.netlify.com/logo_(1).png" type="image/x-icon">
+    <title>3°C Name Generator</title>
+</head>
+
+<body>
+    <h3 style="text-align: center;">GRUPPO 1</h3>
+    <p style="text-align: center;" id="list1"></p>
+    <p style="text-align: center;" id="list2"></p>
+    <p style="text-align: center;" id="list3"></p>
+    <p style="text-align: center;" id="list4"></p>
+    <p style="text-align: center;" id="list5"></p>
+    <br>
+    <h3 style="text-align: center;">GRUPPO 2</h3>
+    <p style="text-align: center;" id="list6"></p>
+    <p style="text-align: center;" id="list7"></p>
+    <p style="text-align: center;" id="list8"></p>
+    <p style="text-align: center;" id="list9"></p>
+    <p style="text-align: center;" id="list10"></p>
+    <br>
+    <h3 style="text-align: center;">GRUPPO 3</h3>
+    <p style="text-align: center;" id="list11"></p>
+    <p style="text-align: center;" id="list12"></p>
+    <p style="text-align: center;" id="list13"></p>
+    <p style="text-align: center;" id="list14"></p>
+    <p style="text-align: center;" id="list15"></p>
+    <br>
+    <h3 style="text-align: center;">GRUPPO 4</h3>
+    <p style="text-align: center;" id="list16"></p>
+    <p style="text-align: center;" id="list17"></p>
+    <p style="text-align: center;" id="list18"></p>
+    <p style="text-align: center;" id="list19"></p>
+    <p style="text-align: center;" id="list20"></p>
+    <br>
+    <h3 style="text-align: center;">GRUPPO 5</h3>
+    <p style="text-align: center;" id="list21"></p>
+    <p style="text-align: center;" id="list22"></p>
+    <p style="text-align: center;" id="list23"></p>
+    <p style="text-align: center;" id="list24"></p>
+    <p style="text-align: center;" id="list25"></p>
+
+    <script>
+        function shuffle(array) {
+            var currentIndex = array.length, temporaryValue, randomIndex;
+
+            while (0 !== currentIndex) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+
+            return array;
+        }
+
+        // Used like so
+        var arr = ["Antonelli Edoardo", "Baldinelli Daniele", "Bocaneala Simona", "Ciriaci Riccardo", "Curto Giulia", "Dezi Francesco", "Galieti Cristiana", "Labruzzo Francesca", "Leach Alice", "Maurizi Filippo", "Molteni Luca Andrew", "Palmieri Lorenzo", "Pugliesi Matteo", "Quattrocchi Filippo", "Ricco Mattia", "Sambucci Valerio", "Sbordoni Damiano", "Scalia Elena", "Singh Chandandeep", "Singh Harsimran", "Spalvieri Samuele", "Tagliaferri Valerio", "Venerucci Federico", "Vitillo Valerio", "Federico Vulcano"];
+        shuffle(arr);
+        console.log(arr);
+        document.getElementById("list1").innerHTML = "1. " + arr[0]
+        document.getElementById("list2").innerHTML = "2. " + arr[1]
+        document.getElementById("list3").innerHTML = "3. " + arr[2]
+        document.getElementById("list4").innerHTML = "4. " + arr[3]
+        document.getElementById("list5").innerHTML = "5. " + arr[4]
+        document.getElementById("list6").innerHTML = "6. " + arr[5]
+        document.getElementById("list7").innerHTML = "7. " + arr[6]
+        document.getElementById("list8").innerHTML = "8. " + arr[7]
+        document.getElementById("list9").innerHTML = "9. " + arr[8]
+        document.getElementById("list10").innerHTML = "10. " + arr[9]
+        document.getElementById("list11").innerHTML = "11. " + arr[10]
+        document.getElementById("list12").innerHTML = "12. " + arr[11]
+        document.getElementById("list13").innerHTML = "13. " + arr[12]
+        document.getElementById("list14").innerHTML = "14. " + arr[13]
+        document.getElementById("list15").innerHTML = "15. " + arr[14]
+        document.getElementById("list16").innerHTML = "16. " + arr[15]
+        document.getElementById("list17").innerHTML = "17. " + arr[16]
+        document.getElementById("list18").innerHTML = "18. " + arr[17]
+        document.getElementById("list19").innerHTML = "19. " + arr[18]
+        document.getElementById("list20").innerHTML = "20. " + arr[19]
+        document.getElementById("list21").innerHTML = "21. " + arr[20]
+        document.getElementById("list22").innerHTML = "22. " + arr[21]
+        document.getElementById("list23").innerHTML = "23. " + arr[22]
+        document.getElementById("list24").innerHTML = "24. " + arr[23]
+        document.getElementById("list25").innerHTML = "25. " + arr[24]
+
+    </script>
+</body>
+
+</html>
